@@ -1,0 +1,116 @@
+body {
+    background-color: #F1F1EA;
+    font-family: 'Arial', sans-serif;
+    color: #33475b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.registrar, .iniciar {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.divider {
+    width: 1px;
+    height: 600px; /* Ajusta la altura según sea necesario */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    background-color: #6D7780;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4F5861;
+}
+
+form {
+    display: none;
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+form.visible {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 20px); /* Ajusta el ancho de los inputs */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"], .btn-regresar {
+    background-color: #6D7780;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, .btn-regresar:hover {
+    background-color: #4F5861;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #6D7780;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flex-row label, .flex-row input {
+    width: 49%; /* Ajusta el ancho de los inputs dentro de la fila flex */
+}
+
+.regresar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
